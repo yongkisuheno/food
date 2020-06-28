@@ -5,43 +5,17 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("blue","  [♥]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC \n");
 echo color("purple","[♥] NGETIK NOMORNYA BEGINI YA 62xxxxxxxxxx \n");
-echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Bananacreamy \n");
+echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @sahrycaem \n");
 echo color("yellow","[♥] KALO GA NGAMBIL OTOMATIS GAGAL BERARTI \n");
-echo color("blue"," [♡] MAKLUM LAH NAMANYA JUGA SC GRATISAN \n");
-echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT TELEGRAM \n");
+echo color("blue"," [♡] NJALUK ROKOKE SAK BATANG \n");
+echo color("purple"," [♥] BY JHON COFFEE \n");
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
-	echo "\n";
-echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[93mLO PUNYA AKUN BUAT LOGIN ?: ";	
-       $pilihy = trim(fgets(STDIN));
-if($pilihy == "y" || $pilihy == "punya")
-echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	goto login;
-login:
-echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-$pass =  ( '║ User Login : ' );
-echo "\033[30;40m";
-$user = trim(fgets(STDIN));
-echo "\033[0m";
-if($user == "ReNdYgAnS")
-{
-	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	echo "\e[93mNAMA LO SIAPA CUK ?: ";
-	$input = trim(fgets(STDIN));
-	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		goto ulang;
+
 }
 else
 {
 		echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";	
-		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		echo "\e[92m[🚫]        \e[91mMAMPOS GA PUNYA AKUNNYA 😆    \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]              \e[91m⚠️ WARNING ⚠️            \e[92m [🚫]\n";
-		echo "\e[92m[🚫]           \e[91mSEGERA MINTA IZIN          \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]          \e[91mTELEGRAM :@BANANACREAMY     \e[92m [🚫]\n";
-		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-goto login;
+		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n
 }
 	return rtrim( $input, "\n" );
 ulang:
