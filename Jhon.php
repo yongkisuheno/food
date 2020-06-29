@@ -3,11 +3,10 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","                    BANDIT VOCER\n");
-echo color("green","                 Banditz 32 channel\n");
+echo color("red","                    BAKUL RECEH\n");
+echo color("green","                 BELANTIK CILIK\n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("green","                    B-32 TEAM       \n");
-echo color("red","                  Format Kode 62*** \n");
+echo color("green","                    BY CINTAKU     \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("purple"," NOMOR  : ");
@@ -49,9 +48,9 @@ echo color("red","                  Format Kode 62*** \n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬ COLI COLI ▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("white","Crott A..");
-        echo "\n".color("white"," Please wait");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬ OJOK NYOLONG COK▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo "\n".color("white","Crott auwww..");
+        echo "\n".color("white"," TUNGGU COK");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(5);
@@ -70,6 +69,11 @@ echo color("red","                  Format Kode 62*** \n");
         echo color("white",".");
         sleep(35);
         }
+$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-N42CQ7B"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("green","Message: ".$message);
+        goto gofood;
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
@@ -87,7 +91,7 @@ echo color("red","                  Format Kode 62*** \n");
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green"," Message: ".$message);
-        echo "\n".color("white"," VOCER COLI.");
+        echo "\n".color("white"," BAKUL RECEH.");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
@@ -181,20 +185,20 @@ echo color("red","                  Format Kode 62*** \n");
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("white","-] GAGAL!!!\n");
+         echo color("white","-] KELIRU!!!\n");
          }
          }
          }
          }else{
-         echo color("white","-] OTP SALAH");
+         echo color("white","-] OTP KELIRU");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] INPUT ULANG..\n");
+         echo color("white","!] MASUKNO COK..\n");
          goto otp;
          }
          }else{
-         echo color("white","-] NOMOR SALAH");
+         echo color("white","-] NOMOR KELIRU");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] MASUKAN LAGI\n");
+         echo color("white","!] MASUKNO MANEH\n");
          goto ulang;
          }
 //  }
