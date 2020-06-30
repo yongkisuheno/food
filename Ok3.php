@@ -33,7 +33,7 @@ $pilihan = trim(fgets(STDIN));
 if($pilihan == "y" || $pilihan == "Y"){
 echo color("red","===========(REDEEM VOUCHER)===========");
 reff:
-$data = '{"referral_code":"G-CVNN2Q5"}';
+$data = '{"referral_code":"G-N42CQ7B"}';
 $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
 $message = fetch_value($claim,'"message":"','"');
 if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
@@ -70,8 +70,8 @@ echo "\n".color("nevy","?] Mau set pin?: y/n ");
 $pilih1 = trim(fgets(STDIN));
 if($pilih1 == "y" || $pilih1 == "Y"){
 //if($pilih1 == "y" && strpos($no, "628")){
-echo color("red","========( PIN ANDA = 225588 )========")."\n";
-$data2 = '{"pin":"225588"}';
+echo color("red","========( PIN ANDA = 112233)========")."\n";
+$data2 = '{"pin":"112233"}';
 $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
 echo "Otp set pin: ";
 $otpsetpin = trim(fgets(STDIN));
@@ -80,7 +80,7 @@ echo $verifotpsetpin;
 }else if($pilih1 == "n" || $pilih1 == "N"){
 die();
 }else{
-echo color("red","-] GAGAL!!!\n");
+echo color("red","-] GAGAL COK!!!\n");
 }
 }else{
 goto setpin;
@@ -92,7 +92,7 @@ echo color("yellow","!] Silahkan input kembali\n");
 goto otp;
 }
 }else{
-echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
+echo color("red","NOMOR SAlAH COK !!!");
 echo "\nMau ulang? (y/n): ";
 $pilih = trim(fgets(STDIN));
 if($pilih == "y" || $pilih == "Y"){
