@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("yellow","[•] Time : ".date('[d-m-Y] [H:i:s]')." \n");
-echo color("yellow","[•] waiting proses..... \n");
+echo color("yellow","[•] ENTENONO COK..... \n");
 echo color("yellow","[•] cara menulis nomor pakai 62xxxxxxxxxx \n");
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 function change(){
@@ -41,6 +41,34 @@ echo "\n".color("green","+] Message: ".$message);
 goto gofood;
 }else{
 echo "\n".color("red","-] Message: ".$message);
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("green","Message: ".$message);
+        goto gofood;
+        }else{
+        echo "\n".color("white"," Message: ".$message);
+        gofood:
+        echo "\n".color("white"," nyohh voucermu..");
+        echo "\n".color("white"," Please wait");
+        for($a=1;$a<=3;$a++){
+        echo color("white",".");
+        sleep(3);
+        }
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+        $message = fetch_value($code1,'"message":"','"');
+        echo "\n".color("white"," Message: ".$message);
+        echo "\n".color("white"," Voucere cukk.");
+        echo "\n".color("white"," Please wait");
+        for($a=1;$a<=3;$a++){
+        echo color("white",".");
+        sleep(3);
+        }
+        sleep(3);
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
+        $messageboba09 = fetch_value($boba09,'"message":"','"');
+        echo "\n".color("white"," Message: ".$messageboba09);
+        sleep(1);
 }
 gofood:
 sleep(3);
@@ -52,19 +80,28 @@ $voucher2 = getStr1('"title":"','",',$cekvoucher,"2");
 $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
 $voucher5 = getStr1('"title":"','",',$cekvoucher,"5");
 $voucher6 = getStr1('"title":"','",',$cekvoucher,"6");
-echo "\n".color("yellow","!] Total voucher ".$total." : ");
-echo color("green","1. ".$voucher1);
+$voucher7 = getStr1('"title":"','",',$cekvoucher,"7");
+$voucher8 = getStr1('"title":"','",',$cekvoucher,"8");
+$voucher9 = getStr1('"title":"','",',$cekvoucher,"9");
+echo "\n".;("yellow","!] Total voucher ".$total." : ");
+echo "\n".color("green","1. ".$voucher1);
 echo "\n".color("green"," 2. ".$voucher2);
 echo "\n".color("green"," 3. ".$voucher3);
 echo "\n".color("green"," 4. ".$voucher4);
 echo "\n".color("green"," 5. ".$voucher5);
 echo "\n".color("green"," 6. ".$voucher6);
+echo "\n".color("green"," 7. ".$voucher7):
+echo "\n".color("green"," 8. ".$voucher8):
+echo "\n".color("green"," 9. ".$voucher9):
 $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
 $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
 $expired3 = getStr1('"expiry_date":"','"',$cekvoucher,'3');
 $expired4 = getStr1('"expiry_date":"','"',$cekvoucher,'4');
 $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
 $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
+$expired7 = getStr1('"expiry_date":"','"',$cekvoucer ,'7');
+$expired8 = getStr1('"expiry_date":"','"',$cekvoucer ,'8');
+$expired9 = getStr1('"expiry_date":"','"',$cekvoucer ,'9');
 setpin:
 echo "\n".color("nevy","?] Mau set pin?: y/n ");
 $pilih1 = trim(fgets(STDIN));
