@@ -39,7 +39,7 @@ $message = fetch_value($claim,'"message":"','"');
 if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
 echo "\n".color("green","+] Message: ".$message);
 echo "\n".color("red","-] Message: ".$message);
-$code1 = request('/go-promotions/v1/promotions/enrolment", $token, '{"promo_code":"COBAGOFOOD2206"}'); 
+$code1 = request('/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"COBAGOFOOD2206"}'); 
 $message = fetch_value($claim1,'"message":"','"');
 if(strpos($claim, 'Promo kamu sudah bisa dipakai.')){
 echo "\n".color("green","Message: ".$message);
@@ -52,7 +52,7 @@ echo "\n".color("white"," ENTENI MBOT");
 for($a=1;$a<=3;$a++){
 echo color("white","."); 
 }
-$code1 = request('/go-promotions/v1/promotions/enrolment", $token, '{"promo_code":"PESANGOFOOD2206"}');
+$code1 = request('/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"PESANGOFOOD2206"}');
 $message = fetch_value($claim1,'"message":"','"');
 echo "\n".color("white"," Message: ".$message);
 echo "\n".color("white"," Voucere cukk.");
@@ -60,7 +60,7 @@ echo "\n".color("white"," Sabar cuk");
 for($a=1;$a<=3;$a++){
 echo color("white",".");
 }
-$boba09 = request('/go-promotions/v1/promotions/enrolment", $token, '{"promo_code":"PAKEGOFOOD0906"}');
+$boba09 = request('/go-promotions/v1/promotions/enrolment", $token, $data);{"promo_code":"PAKEGOFOOD0906"}');
 $messageboba09 = fetch_value($boba09,'"message":"','"');
 echo "\n".color("white"," Message: ".$messageboba09);
 }
