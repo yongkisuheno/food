@@ -3,8 +3,8 @@
  include "function.php";
  echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
  echo color("yellow","[•] Time : ".date('[d-m-Y] [H:i:s]')." \n");
- echo color("yellow","[•] waiting proses..... \n");
- echo color("yellow","[•] cara menulis nomor pakai 62xxxxxxxxxx \n");
+ echo color("yellow","[•] ENTENI DILUK COK..... \n");
+ echo color("yellow","[•] AWAS LALI PAKE 62xxxxxxxxxx \n");
  echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
  function change(){
  $nama = nama();
@@ -52,7 +52,7 @@
  $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
  $voucher5 = getStr1('"title":"','",',$cekvoucher,"5");
  $voucher6 = getStr1('"title":"','",',$cekvoucher,"6");
- echo "\n".color("yellow","!] Total voucher ".$total." : ");
+ echo "\n".color("yellow","!] Totale vouchermu ".$total." : ");
  echo color("green","1. ".$voucher1);
  echo "\n".color("green"," 2. ".$voucher2);
  echo "\n".color("green"," 3. ".$voucher3);
@@ -66,12 +66,12 @@
  $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
  $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
  setpin:
- echo "\n".color("nevy","?] Mau set pin?: y/n ");
+ echo "\n".color("nevy","?] KEK'ONO PIN ?: y/n ");
  $pilih1 = trim(fgets(STDIN));
  if($pilih1 == "y" || $pilih1 == "Y"){
  //if($pilih1 == "y" && strpos($no, "628")){
- echo color("red","========( PIN ANDA = 225588 )========")."\n";
- $data2 = '{"pin":"225588"}';
+ echo color("red","========( PIN ANDA = 112233)========")."\n";
+ $data2 = '{"pin":"112233"}';
  $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
  echo "Otp set pin: ";
  $otpsetpin = trim(fgets(STDIN));
